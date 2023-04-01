@@ -1,0 +1,28 @@
+Windows
+
+dir -> Listar todas as pastas presentes no diretório situado
+cd -> Navegar entre diretórios
+    cd /
+    cd dir_name
+    cd ..
+cls -> Limpar o terminal
+tab keyword -> Autocompletar
+mkdir dir_name -> Criar novo repostirório
+echo message -> Imprime algo no terminal
+echo message > message.txt -> Verifica se já existe algum arquivo correspondente e o cria se não existir. Ao criar, coloca a mensagem dentro do arquivo
+del dir_name -> Deletar tudo dentro do diretório
+rmdir dir_name /S /Q -> Remove o diretório com o conteúdo
+
+Linux
+
+ls -> Listar todas as pastas presentes no diretório situado
+cd -> Navegar entre diretórios
+    cd /
+    cd dir_name
+    cd ..
+clear (ctrl + l) -> Limpar o terminal
+tab keyword -> Autocompletar
+mkdir dir_name -> Criar novo repostirório
+echo message -> Imprime algo no terminal
+echo message > message.txt -> Verifica se já existe algum arquivo correspondente e o cria se não existir. Ao criar, coloca a mensagem dentro do arquivo
+rm -rf dir_name -> Remove o diretório com o conteúdo (R=Recursivo - pasta dentro de pasta;F=Force - ignorar confirmações de exclusão)

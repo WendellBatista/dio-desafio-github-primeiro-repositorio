@@ -1,0 +1,58 @@
+- SHA1 (Secure Hash Algorithm)
+
+Conjuntos de funções hash criptográficas projetada pela NSA
+Encriptação gera conjunto de 40 caracteres
+Forma curta de representar um arquivo
+openssl sha1 file_name -> Gera uma chave para o arquivo especificado
+
+- Objetos Internos
+
+Blobs:
+
+echo "content" | git hash-object --stdin (Gerar um sha1 diferente do comando openssl);
+Os arquivos do git ficam dentro de um objeto "blob", que possui uma estrutura específica de metadados (blob content_size\0content);
+
+Tree:
+
+Armazena e aponta para diferentes blobs e commits;
+Também possui metadados (Tree content_size\0  blob sa4d8s texto.txt);
+Possui uma sha1 próprio.
+
+Commits:
+
+É um conjunto de alterações;
+Aponta para uma árvore, arquivo parente, autor, mensagem e timestamp;
+Também possui sha1 próprio para os seus metadados.
+
+- Sistema Distribuído Seguro
+
+Garante confiabilidade para todo o repositório.
+
+- Chaves SSH e Tokens
+
+Sempre que alterações são gravadas no github será necessário autenticação;
+Antes era user e password, mas mudou;
+
+Chave SSH: 
+
+Estabelece uma conexão segura entre duas máquinas, com duas chave (pública e privada);
+O GitHub reconhece a chave pública e garante a confiabilidade;
+Usa-se o protocolo SSH para o clone de repositórios;
+Com o gitbash é possível gerar as chaves:
+
+ssh-keygen -t ed25519 -C email
+[command] [cript_type] [email]
+
+cat public_id
+
+eval $(ssh-agent -s)
+Iniciar o processo do agent
+
+ssh-add private_key
+
+Token de acesso pessoal
+
+É gerado um token no GitHub que será usado sempre que uma alteração for gravada no GitHub;
+Na autentição será preciso o user e, na senha, o token;
+Deve ser salvo em algum local;
+Usa-se o protocolo HTTPS para o clone de repositórios.

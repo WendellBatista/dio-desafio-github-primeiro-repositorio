@@ -1,0 +1,7 @@
+Untracked -> Novo arquivo criado;
+
+Unmodified -> Arquivo existente não foi modificado (estágio padrão de qualquer arquivo commitado ou já presente no repositório);
+
+Modified -> Arquivo existente foi modificado;
+
+Staged -> (git add) estágio onde o arquivo está preparado para o commit;

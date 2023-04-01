@@ -1,0 +1,10 @@
+git init -> Inicializa um repositório no git, pronto para versionamento
+ls -a -> Mostrar arquivos ocultos
+
+Configurações de autenticação
+git config --global user.email ""
+git config --global user.name ""
+
+git add *
+
+git commit -m ""
